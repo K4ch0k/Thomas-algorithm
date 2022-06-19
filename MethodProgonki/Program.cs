@@ -9,19 +9,24 @@ namespace MethodProgonki
         {
             int rows = 0;
             int columns = 0;
+            String line;
 
             //  Ru
+            //  Алгоритм используется для решения систем линейных уравнений вида Ax=F, где A - трёхдиагональная матрица.
             //  В моём примере матрица была n X n
             //  Если в вашем файле числа разделены чем-то, отличным от таба - измените 3 строки .Split("\t")
+
             //  Eng
+            //  The algorithm is used to solve systems of linear equations of the form Ax=F, where A is a tridiagonal matrix.
             //  In my example, the matrix was n X n
             //  If the numbers in your file are separated by something other than tab, change 3 lines .Split("\t")
 
-            String line;
-
-
-            StreamReader srA = new StreamReader(@"C:\Users\Danil\Downloads\A14.txt");
-            StreamReader srB = new StreamReader(@"C:\Users\Danil\Downloads\B14.txt");
+            //  Файл с матрицей A 
+            //  FIle with matrix A
+            StreamReader srA = new StreamReader(@"C:\Users\A14.txt");
+            //  Файл с матрицей F
+            //  FIle with matrix F
+            StreamReader srB = new StreamReader(@"C:\Users\B14.txt");
 
             try
             {
